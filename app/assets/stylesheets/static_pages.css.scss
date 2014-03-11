@@ -1,0 +1,39 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home{background: url(tof-de-fond.jpg);
+	height:1000px;
+}
+.resize-fill-and-clip{ 
+  /* Resize to fill and retain aspect ratio.
+     Will cause clipping if aspect ratio of box is different from image. */ 
+  background-size: cover;
+}
+.logo{
+	text-align: center;
+	font-family: 'Lemon', sans-serif;
+	background-color: rgba(253, 225, 216, 0.41);
+}
+.logo h1{
+	font-family: 'Lemon', sans-serif;
+	font-size: 8em;
+	color: #ba3408;
+}
+.logo h3{
+	font-family: 'Lemon', sans-serif;
+	font-size: 2em;
+	color: #2e2e2e;
+}
+.call-to-action input{
+	font-family: 'Lemon', sans-serif;
+	font-size: 1em;
+	color: #fde1d8;
+	background-color: rgba(20, 4, 1, 0.2);
+	border: 0px solid;
+	white-space: normal;
+    width: 400px;
+}
+.button{
+	background-color:  #09C261;
+}
