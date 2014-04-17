@@ -1,9 +1,9 @@
 .container.home.resize-fill-and-clip
 	%nav.breadcrumbs
-		= link_to "Accueil", controller: "static_pages"
-		= link_to "Qui?", ccontroller: "static_pages"
+		= link_to "Au menu", controller: "static_pages"
+		= link_to "Comment ca marche?", controller: "static_pages", action:"comment"
 		= link_to "Quoi?", controller: "static_pages"
-		= link_to "Ou?", controller: "static_pages"
+		= link_to "Ou?", controller: "static_pages", action:"ou"
 	.logo
 		%h1= "dabox"
 		%h3= "Manger un bon plat cuisiné du jour"
