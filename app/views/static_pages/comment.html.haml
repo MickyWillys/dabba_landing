@@ -4,72 +4,148 @@
 .menu-explanation
 	.magellan-container{"data-magellan-expedition" => "fixed", "data-options" => "destination_threshold:65;throttle_delay:0;", style: ""}
 		%dl.sub-nav
-			%dd{"data-magellan-arrival" => "arrival"}
-				%a{href: "#arrival"}
-					Arrival
-			%dd{"data-magellan-arrival" => "destination"}
-				%a{href: "#destination"}
-					Destination
-			%dd{"data-magellan-arrival" => "js"}
-				%a{href: "#js"}
-					Javascript
+			%dd{"data-magellan-arrival" => "boite"}
+				%a{href: "#boite"}
+					La boite
+			%dd{"data-magellan-arrival" => "cuisine"}
+				%a{href: "#cuisine"}
+					Ils Cuisinent
+			%dd{"data-magellan-arrival" => "commande"}
+				%a{href: "#commande"}
+					Vous commandez
+			%dd{"data-magellan-arrival" => "livraison"}
+				%a{href: "#livraison"}
+					Nous Livrons
+
 			%a.button.radius{href: "#"}Valider
-	%hr/
+	%hr
 .explanation
-	.row{"data-magellan-destination" => "arrival"}
-		%p
-		%a{name: "arrival"}
-		%h3 Arrival
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
 
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
+	.row
+		%h2 Dabox comment ca marche?
+		.small-3.large-3.columns
+			=image_tag("/box.png", width: '55')
+			%h4 Remplies par des artisans culinaires
+			%p Les artisans culinaires sont des personnes professionnelles ou amateur qui ont été reconnu pour leur volonté de produire de 
+		.small-3.large-3.columns
+			=image_tag("/box.png", width: '55')
+			%h4 Commandez les plats du jours
+			%p Des vrais bon petit plats cuisinés sont disponible chaque jours dans la limites des stocks disponibles.
+		.small-3.large-3.columns
+			=image_tag("/box.png", width: '55')
+			%h4 Plannifions la livraison, 
+			%p Selectionner une plage horaire pour la livraison, le livreur vous informera.
+		.small-3.large-3.columns
+			=image_tag("/box.png", width: '55')
+			%h4 Une boite au centre du système
+			%p la boite est centrale, c'est elle qui est au centre des transactions. C'est qualité
 
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')	
+.cuisinier
 
+	.row{"data-magellan-destination" => "cuisine"}
+		%a{name: "cuisine"}
+		.row
+			.small-6.large-6.columns
+				%h2 Nos artisans culinaires
+				%h3 Sachez qui est derrière votre repas
+				%p Pas le temps ou l'envie de vous concoctez une bon petit plat. Ne vous en faites pas, les artisans culinaires de Dabox s'en occupent. Ils sont pas la par hasard, leur passion pour la cuisine et leur envie de partager de bons produits ...
+			.small-6.large-6.columns
+				=image_tag("/box.png")
+		.small-10.large-10.small-centered.large-centered.columns
+			.small-3.large-3.columns
+				
+				%h4 Remplies par des artisans culinaires
+				%p Les artisans culinaires sont des personnes professionnelles ou amateur qui ont été reconnu pour leur volonté de produire de 
+			.small-3.large-3.columns
+				
+				%h4 Commandez les plats du jours
+				%p Des vrais bon petit plats cuisinés sont disponible chaque jours dans la limites des stocks disponibles.
+			.small-3.large-3.columns
+				
+				%h4 Plannifions la livraison, 
+				%p Selectionner une plage horaire pour la livraison, le livreur vous informera.
+			.small-3.large-3.columns
+				
+				%h4 Une boite au centre du système
+				%p la boite est centrale, c'est elle qui est au centre des transactions. C'est qualité
+
+
+
+
+			
+		%hr
+
+.commande
+
+	.row{"data-magellan-destination" => "commande"}
+		%a{name: "commande"}
+		.row
+			.small-6.large-6.columns
+				%h2 Des plats du jours, tous jours!
+				%h3 -----
+				%p Il existe une multitude de choix de plats possible et nous comptons bien vous en faire profiter. Découvrez de nouveaux plats chaque jour au menu et on oublies personne. Si vous avez un régime spécial
+				Les plats sont préparés en petite quantités, alors reservez vite ...
+			.small-6.large-6.columns
+				=image_tag("/box.png")
+		.small-10.large-10.small-centered.large-centered.columns
+			.small-3.large-3.columns
+				
+				%h4 Pré commande
+				%p les plats sont réalisés à la commande, mais si vous avez un changement de plans on peut s'adapter.
+			.small-3.large-3.columns
+				
+				%h4 Economie plannifiées
+				%p Au plus vous commandez vos plats à l'avance au plus vous avez l'occasion de bénéficier de nos remises de 10% - 25% sur la plus part des articles.
+			.small-3.large-3.columns
+				
+				%h4 Trouvez rapidement vos plats, 
+				%p Grace aux icone décrivant les plats, vous pouvez rapidement filter les options de repas qui vous intéresse.
+
+			.small-3.large-3.columns
+				
+				%h4 De vraies critiques
+				%p Notre équipe de critiques culinaires fait une revue de chaque plat et vous fait part de ces remarques. Vous avez acces au avis des consommateurs
+
+		%hr
+
+.livraison
+
+	.row{"data-magellan-destination" => "livraison"}
+		%a{name: "livraison"}
+		.row
+			.small-6.large-6.columns
+				%h2 Livraison le jour meme, tous les soir de la semaine!
+				%h3 -----
+				%p Que l'on commande  ...
+			.small-6.large-6.columns#map_canvas
+				
+		.small-10.large-10.small-centered.large-centered.columns
+			.small-3.large-3.columns
+				
+				%h4 Une livraison locale
+				%p Ca dépend, si vous n'êtes pas dispo on peut la confier à un tiers de votre choix, concierge.
+			.small-3.large-3.columns
+				
+				%h4 Un contact direct
+				%p Les livreurs vous informeront de leur passage
+			.small-3.large-3.columns
+				
+				%h4 la remise des plats, 
+				%p Grace aux icone décrivant les plats, vous pouvez rapidement filter les options de repas qui vous intéresse.
+
+			.small-3.large-3.columns
+				
+				%h4 De vraies critiques
+				%p Notre équipe de critiques culinaires fait une revue de chaque plat et vous fait part de ces remarques. Vous avez acces au avis des consommateurs
+
+		%hr
+
+
+
+	%a{name: "boite"}
+		%h3 La boite
 		%p
 		You can create the destination structure for Magel…
 		%h4
 		HTML
-		%hr/
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
-	.row{"data-magellan-destination" => "destination"}
-		%p
-		%a{name: "destination"}
-		%h3 Destination
-		%p
-		You can create the destination structure for Magel…
-		%h4
-		HTML
-		%hr/
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
-
-	.row{"data-magellan-destination" => "js"}
-		%p
-		%a{name: "js"}
-		%h3 JS
-		%p
-		You can create the destination structure for Magel…
-		%h4
-		HTML
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
-	.row	
-		=image_tag("/box.png", height: '235', width: '125')
 		%hr/
