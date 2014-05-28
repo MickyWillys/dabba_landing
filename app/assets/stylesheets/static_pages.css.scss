@@ -10,23 +10,30 @@
      Will cause clipping if aspect ratio of box is different from image. */ 
   background-size: cover;
 }
+@font-face {
+  font-family: 'Stroke-Bold';
+  src: url('/assets/Stroke-Bold.otf');
+  src: local('☺'), url('/assets/Stroke-Bold.otf') format('Stroke-Bold');
+  font-weight: normal;
+  font-style: normal;
+}
 .logo{
 	text-align: center;
-	font-family: 'Lemon', sans-serif;
+	font-family: 'Stroke-Bold', sans-serif;
 	background-color: rgba(253, 225, 216, 0.41);
 }
 .logo h1{
-	font-family: 'Lemon', sans-serif;
+	font-family: 'Stroke-Bold', sans-serif;
 	font-size: 8em;
 	color: #ba3408;
 }
 .logo h3{
-	font-family: 'Lemon', sans-serif;
+	font-family: 'Stroke-Bold', sans-serif;
 	font-size: 2em;
 	color: #2e2e2e;
 }
 .call-to-action input{
-	font-family: 'Lemon', sans-serif;
+	font-family: 'Stroke-Bold', sans-serif;
 	font-size: 1em;
 	color: #fde1d8;
 	background-color: rgba(20, 4, 1, 0.2);
